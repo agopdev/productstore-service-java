@@ -61,7 +61,7 @@ $ docker compose up -d
 $ cd ../
 ```
 
-5) Now, you have to install the dependencies with maven, so first go inside `product-store` directory with
+5) Now, you have to run the API, so first go inside `product-store` directory with
 ```bash
 $ cd productstore
 ```
@@ -91,6 +91,10 @@ $ mvn spring-boot:run
 ```
 
 3) See? It's easier. Just use terminal.
+
+**Project running**
+
+Now that the project is running, you can access to it in the port `8080` (Or the one you configure in `application.properties`). Just check the endpoints inside the `controller` directory and classes.
 
 ## Stop the project
 To stop the project just press the stop button if you're using vscode tools or just send a `Ctrl + C` in the terminal, for both methods.
