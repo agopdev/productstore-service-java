@@ -144,6 +144,14 @@ There's one configuration that allows hibernate update the database, create tabl
 This file is for the docker configuration, in this case only contains the image and container configuration for mysql. You can consult the password for the database here.
 P.D.: I know it's better to use a `.env` file, but this is a simple project, go ahead if you want to integrate a `.env`.
 
+## About the repo...
+I use `main` as prod branch, `develop` as working branch.
+If you want to implement a feature, fix, etc. just create a new branch that comes from `develop` using the prefix `feature/` or `fix` and separating words by `-` symbol.
+
+Example: 
+- `feature/new-endpoint`
+- `fix/readme-file`
+
 #
 # Final note
 
