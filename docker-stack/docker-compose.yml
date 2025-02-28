@@ -4,6 +4,7 @@ services:
     container_name: mysql-productstore
     restart: always
     environment:
+      MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: productstoredb
       MYSQL_USER: user
@@ -12,6 +13,7 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./docker-stack/mysql/data:/docker-entrypoint-initdb.d
 
 volumes:
   mysql_data:

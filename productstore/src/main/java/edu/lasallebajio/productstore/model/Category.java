@@ -1,7 +1,7 @@
 package edu.lasallebajio.productstore.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Category {
@@ -22,5 +22,5 @@ public class Category {
     public void setName(String name) {
         this.name = name;
     }
-    
+
 }
